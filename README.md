@@ -49,7 +49,7 @@ SQL_FILE="example.sql"
 OUTPUT_FILE="table_count.txt"
 
 # Rename the original SQL file to example.sql
-mv v6_typefocus_09-39-59.sql "$SQL_FILE"
+mv example.sql-39-59.sql "$SQL_FILE"
 
 # Count the number of tables
 TABLE_COUNT=$(grep -i "CREATE TABLE" "$SQL_FILE" | wc -l)
